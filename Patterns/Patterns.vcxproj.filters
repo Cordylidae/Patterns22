@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Singleton">
+      <UniqueIdentifier>{646653fe-df16-46d7-a418-b124a52b5bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Prototype">
+      <UniqueIdentifier>{ccf7fe6d-3a09-401d-982a-26eba637ad2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FactoryMethod">
+      <UniqueIdentifier>{a3ff6f8a-5584-400b-8820-b92dc64dc8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AbstractFactory">
+      <UniqueIdentifier>{1b25738e-fb43-44b9-afae-3ddbf05c8be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Builder">
+      <UniqueIdentifier>{a53af9fe-cf6c-462f-b5bf-5cf7b5332d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Adapter">
+      <UniqueIdentifier>{de8c23ca-2ec3-45d0-94c8-180e2e9751c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bridge">
+      <UniqueIdentifier>{66fe39d8-83ae-496d-9a0d-37358650893d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Composite">
+      <UniqueIdentifier>{cc3b15d2-1d06-4d00-8848-483341155a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Decorator">
+      <UniqueIdentifier>{36d4e0ea-fb21-475a-8625-b300177c41eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Proxy">
+      <UniqueIdentifier>{b34b31a9-4109-4927-a700-9dbb8590fd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Facade">
+      <UniqueIdentifier>{154140a6-a1ac-448d-8f65-035883aed1c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Flyweight">
+      <UniqueIdentifier>{570f8b4c-56a7-4820-a047-53125ac8d422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Iterator">
+      <UniqueIdentifier>{294a4ae2-4cbf-4483-8d11-680f19f18189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command">
+      <UniqueIdentifier>{e09af926-e35e-4a87-96ec-58747d721378}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton\Singleton.cpp">
+      <Filter>Source Files\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype\Prototype.cpp">
+      <Filter>Source Files\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryMethod\FactoryMethod.cpp">
+      <Filter>Source Files\FactoryMethod</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFactory\AbstractFactory.cpp">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder\Builder.cpp">
+      <Filter>Source Files\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="Adapter\Adapter.cpp">
+      <Filter>Source Files\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge\Bridge.cpp">
+      <Filter>Source Files\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite\Composite.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator\Decorator.cpp">
+      <Filter>Source Files\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="Proxy\Proxy.cpp">
+      <Filter>Source Files\Proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Facade\Facade.cpp">
+      <Filter>Source Files\Facade</Filter>
+    </ClCompile>
+    <ClCompile Include="Flyweight\Flyweight.cpp">
+      <Filter>Source Files\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="Iterator\Iterator.cpp">
+      <Filter>Source Files\Iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="Command\Command.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Singleton\Singleton.h">
+      <Filter>Source Files\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Prototype\Prototype.h">
+      <Filter>Source Files\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryMethod\FactoryMethod.h">
+      <Filter>Source Files\FactoryMethod</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFactory\AbstractFactory.h">
+      <Filter>Source Files\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder\Builder.h">
+      <Filter>Source Files\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="Adapter\Adapter.h">
+      <Filter>Source Files\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge\Bridge.h">
+      <Filter>Source Files\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite\Composite.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator\Decorator.h">
+      <Filter>Source Files\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="Proxy\Proxy.h">
+      <Filter>Source Files\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Facade\Facade.h">
+      <Filter>Source Files\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Flyweight\Flyweight.h">
+      <Filter>Source Files\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Iterator\Iterator.h">
+      <Filter>Source Files\Iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="Command\Command.h">
+      <Filter>Source Files\Command</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
