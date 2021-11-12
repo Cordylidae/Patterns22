@@ -16,6 +16,7 @@
 
 #include"Iterator/Iterator.h"
 #include"Command/Command.h"
+#include"ChainOfResponsibility/ChainOfResponsibility.h"
 
 namespace SingletonNamespace {
 
@@ -508,6 +509,54 @@ namespace CommandNamespace {
 		delete receiver;
 	}
 }
+namespace ChainOfResponsibilityNamespace{
+	
+	#include<vector>
+
+	void ClientCode(Handler& handler)
+	{
+		std::vector<std::string> food = { "Nut", "Banana", "Cup of Tea" };
+
+		for (const std::string& f : food)
+		{
+			std::cout << "Client: Who wants a " << f << "?\n";
+
+			const std::string result = handler.Handle(f);
+
+			if (!result.empty())
+			{
+				std::cout << " " << result;
+			}
+			else
+			{
+				std::cout << " " << f << " was left untouched.\n";
+			}
+		}
+	}
+
+	void ChainOfResponsibilityMain()
+	{
+		std::cout << "Chain of Responsibility Main test: \n\n";
+
+		MonkeyHandler* monkey = new MonkeyHandler;
+		SquirrelHandler* squirrel = new SquirrelHandler;
+		DogHandler* dog = new DogHandler;
+
+		monkey->SetNext(squirrel)->SetNext(dog);
+
+		std::cout << "Chain: Monkey > Squirrel > Dog\n\n";
+		ClientCode(*monkey);
+		
+		std::cout << "\n";
+		std::cout << "Subchain: Squirrel > Dog\n\n";
+
+		ClientCode(*squirrel);
+
+		delete monkey;
+		delete squirrel;
+		delete dog;
+	}
+}
 
 int main()
 {
@@ -534,6 +583,7 @@ int main()
 	std::cout << "Behavioral Design Patterns:\n";
 	std::cout << "Iterator : 12 \n";
 	std::cout << "Command : 13 \n";
+	std::cout << "ChainOfResponsibility : 14 \n";
 
 
 	std::cout << std::endl;
@@ -568,6 +618,8 @@ int main()
 		case 12: IteratorNamespace::IteratorMain();
 			break;
 		case 13: CommandNamespace::CommandMain();
+			break;
+		case 14: ChainOfResponsibilityNamespace::ChainOfResponsibilityMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";

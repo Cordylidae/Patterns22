@@ -144,6 +144,7 @@
     <ClCompile Include="Adapter\Adapter.cpp" />
     <ClCompile Include="Bridge\Bridge.cpp" />
     <ClCompile Include="Builder\Builder.cpp" />
+    <ClCompile Include="ChainOfResponsibility\ChainOfResponsibility.cpp" />
     <ClCompile Include="Command\Command.cpp" />
     <ClCompile Include="Composite\Composite.cpp" />
     <ClCompile Include="Decorator\Decorator.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="Adapter\Adapter.h" />
     <ClInclude Include="Bridge\Bridge.h" />
     <ClInclude Include="Builder\Builder.h" />
+    <ClInclude Include="ChainOfResponsibility\ChainOfResponsibility.h" />
     <ClInclude Include="Command\Command.h" />
     <ClInclude Include="Composite\Composite.h" />
     <ClInclude Include="Decorator\Decorator.h" />

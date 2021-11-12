@@ -55,6 +55,9 @@
     <Filter Include="Source Files\Command">
       <UniqueIdentifier>{e09af926-e35e-4a87-96ec-58747d721378}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ChainOfResponsibility">
+      <UniqueIdentifier>{fd942d55-ae21-4e76-b15d-a67c428339b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -102,6 +105,9 @@
     <ClCompile Include="Command\Command.cpp">
       <Filter>Source Files\Command</Filter>
     </ClCompile>
+    <ClCompile Include="ChainOfResponsibility\ChainOfResponsibility.cpp">
+      <Filter>Source Files\ChainOfResponsibility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -145,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="Command\Command.h">
       <Filter>Source Files\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainOfResponsibility\ChainOfResponsibility.h">
+      <Filter>Source Files\ChainOfResponsibility</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
