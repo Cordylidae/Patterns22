@@ -58,6 +58,9 @@
     <Filter Include="Source Files\ChainOfResponsibility">
       <UniqueIdentifier>{fd942d55-ae21-4e76-b15d-a67c428339b1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Mediator">
+      <UniqueIdentifier>{ba7021bd-588a-46fe-8cb0-2050dd641c64}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -108,6 +111,9 @@
     <ClCompile Include="ChainOfResponsibility\ChainOfResponsibility.cpp">
       <Filter>Source Files\ChainOfResponsibility</Filter>
     </ClCompile>
+    <ClCompile Include="Mediator\Mediator.cpp">
+      <Filter>Source Files\Mediator</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -154,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="ChainOfResponsibility\ChainOfResponsibility.h">
       <Filter>Source Files\ChainOfResponsibility</Filter>
+    </ClInclude>
+    <ClInclude Include="Mediator\Mediator.h">
+      <Filter>Source Files\Mediator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

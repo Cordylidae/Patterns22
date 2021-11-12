@@ -153,6 +153,7 @@
     <ClCompile Include="Flyweight\Flyweight.cpp" />
     <ClCompile Include="Iterator\Iterator.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mediator\Mediator.cpp" />
     <ClCompile Include="Prototype\Prototype.cpp" />
     <ClCompile Include="Proxy\Proxy.cpp" />
     <ClCompile Include="Singleton\Singleton.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="FactoryMethod\FactoryMethod.h" />
     <ClInclude Include="Flyweight\Flyweight.h" />
     <ClInclude Include="Iterator\Iterator.h" />
+    <ClInclude Include="Mediator\Mediator.h" />
     <ClInclude Include="Prototype\Prototype.h" />
     <ClInclude Include="Proxy\Proxy.h" />
     <ClInclude Include="Singleton\Singleton.h" />
