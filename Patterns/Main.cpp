@@ -18,6 +18,7 @@
 #include"Command/Command.h"
 #include"ChainOfResponsibility/ChainOfResponsibility.h"
 #include"Mediator/Mediator.h"
+#include"Memento/Memento.h"
 
 namespace SingletonNamespace {
 
@@ -586,6 +587,43 @@ namespace MediatorNamespace{
 		ClientCode();
 	}
 }
+namespace MementoNamespace {
+	
+	void ClientCode()
+	{
+		Originator* originator = new Originator("Super-duper-super-puper-hook.");
+		Caretaker* caretaker = new Caretaker(originator);
+
+		for (int i = 0; i < 3; i++) {
+			caretaker->Backup();
+			originator->DoSomething();
+		}
+		
+		std::cout << "\n";
+		caretaker->ShowHistory();
+		
+		std::cout << "\nClient: Now let's rollback!\n\n";
+		caretaker->Undo();
+
+		std::cout << "\nClient: Now Once More!\n\n";
+		caretaker->Undo();
+
+		std::cout << "\n";
+		caretaker->ShowHistory();
+		
+		delete originator;
+		delete caretaker;
+	}
+
+	void MementoMain()
+	{
+		std::srand(static_cast<unsigned int>(std::time(NULL)));
+
+		std::cout << "Memento Main test: \n\n";
+
+		ClientCode();	
+	}
+}
 
 int main()
 {
@@ -614,6 +652,7 @@ int main()
 	std::cout << "Command : 13 \n";
 	std::cout << "ChainOfResponsibility : 14 \n";
 	std::cout << "Mediator : 15 \n";
+	std::cout << "Memento : 16 \n";
 
 
 	std::cout << std::endl;
@@ -652,6 +691,8 @@ int main()
 		case 14: ChainOfResponsibilityNamespace::ChainOfResponsibilityMain();
 			break;
 		case 15: MediatorNamespace::MediatorMain();
+			break;
+		case 16: MementoNamespace::MementoMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";
