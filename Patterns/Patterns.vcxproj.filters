@@ -64,6 +64,9 @@
     <Filter Include="Source Files\Memento">
       <UniqueIdentifier>{726f46f9-3f31-49bb-84a5-05a810396e31}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Observer">
+      <UniqueIdentifier>{c530c12c-cb46-4398-b716-318f61b1f7c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -120,6 +123,9 @@
     <ClCompile Include="Memento\Memento.cpp">
       <Filter>Source Files\Memento</Filter>
     </ClCompile>
+    <ClCompile Include="Observer\Observer.cpp">
+      <Filter>Source Files\Observer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -172,6 +178,9 @@
     </ClInclude>
     <ClInclude Include="Memento\Memento.h">
       <Filter>Source Files\Memento</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Observer.h">
+      <Filter>Source Files\Observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

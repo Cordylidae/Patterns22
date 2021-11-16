@@ -19,6 +19,7 @@
 #include"ChainOfResponsibility/ChainOfResponsibility.h"
 #include"Mediator/Mediator.h"
 #include"Memento/Memento.h"
+#include"Observer/Observer.h"
 
 namespace SingletonNamespace {
 
@@ -624,6 +625,50 @@ namespace MementoNamespace {
 		ClientCode();	
 	}
 }
+namespace ObserverNamespace {
+
+	void ClientCode()
+	{
+		Subject* subject = new Subject;
+
+		Observer* observer1 = new Observer(*subject);
+		Observer* observer2 = new Observer(*subject);
+		Observer* observer3 = new Observer(*subject);
+		
+		Observer* observer4;
+		Observer* observer5;
+
+		subject->CreateMessage("Hello World! :D");
+		observer3->RenoveMeFromTheList();
+
+		subject->CreateMessage("The wrather is hot today! :D");
+		observer4 = new Observer(*subject);
+
+		observer2->RenoveMeFromTheList();
+		observer5 = new Observer(*subject);
+
+		subject->CreateMessage("My new car is good! :D");
+		observer5->RenoveMeFromTheList();
+
+		observer4->RenoveMeFromTheList();
+		observer1->RenoveMeFromTheList();
+
+		delete observer5;
+		delete observer4;
+		delete observer3;
+		delete observer2;
+		delete observer1;
+
+		delete subject;
+	}
+
+	void ObserverMain()
+	{
+		std::cout << "Observer Main test: \n\n";
+
+		ClientCode();
+	}
+}
 
 int main()
 {
@@ -653,6 +698,7 @@ int main()
 	std::cout << "ChainOfResponsibility : 14 \n";
 	std::cout << "Mediator : 15 \n";
 	std::cout << "Memento : 16 \n";
+	std::cout << "Observer : 17 \n";
 
 
 	std::cout << std::endl;
@@ -693,6 +739,8 @@ int main()
 		case 15: MediatorNamespace::MediatorMain();
 			break;
 		case 16: MementoNamespace::MementoMain();
+			break;
+		case 17: ObserverNamespace::ObserverMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";
