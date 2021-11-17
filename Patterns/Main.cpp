@@ -20,6 +20,7 @@
 #include"Mediator/Mediator.h"
 #include"Memento/Memento.h"
 #include"Observer/Observer.h"
+#include"State/State.h"
 
 namespace SingletonNamespace {
 
@@ -669,6 +670,25 @@ namespace ObserverNamespace {
 		ClientCode();
 	}
 }
+namespace StateNamespace {
+	
+	void ClientCode()
+	{
+		Context* context = new Context(new ConcreteStateA);
+		
+		context->Request1();
+		context->Request2();
+
+		delete context;
+	}
+
+	void StateMain()
+	{
+		std::cout << "State Main test: \n\n";
+
+		ClientCode();
+	}
+}
 
 int main()
 {
@@ -699,6 +719,7 @@ int main()
 	std::cout << "Mediator : 15 \n";
 	std::cout << "Memento : 16 \n";
 	std::cout << "Observer : 17 \n";
+	std::cout << "State : 18 \n";
 
 
 	std::cout << std::endl;
@@ -741,6 +762,8 @@ int main()
 		case 16: MementoNamespace::MementoMain();
 			break;
 		case 17: ObserverNamespace::ObserverMain();
+			break;
+		case 18: StateNamespace::StateMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";

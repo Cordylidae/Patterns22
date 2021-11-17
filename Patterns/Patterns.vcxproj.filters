@@ -67,6 +67,9 @@
     <Filter Include="Source Files\Observer">
       <UniqueIdentifier>{c530c12c-cb46-4398-b716-318f61b1f7c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\State">
+      <UniqueIdentifier>{c7b25b3a-3879-4041-858c-db24ae31ac8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -126,6 +129,9 @@
     <ClCompile Include="Observer\Observer.cpp">
       <Filter>Source Files\Observer</Filter>
     </ClCompile>
+    <ClCompile Include="State\State.cpp">
+      <Filter>Source Files\State</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -181,6 +187,9 @@
     </ClInclude>
     <ClInclude Include="Observer\Observer.h">
       <Filter>Source Files\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="State\State.h">
+      <Filter>Source Files\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
