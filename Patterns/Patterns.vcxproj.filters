@@ -70,6 +70,9 @@
     <Filter Include="Source Files\State">
       <UniqueIdentifier>{c7b25b3a-3879-4041-858c-db24ae31ac8b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Strategy">
+      <UniqueIdentifier>{25c5f5c2-bed0-4a62-9c80-774a2006e842}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -132,6 +135,9 @@
     <ClCompile Include="State\State.cpp">
       <Filter>Source Files\State</Filter>
     </ClCompile>
+    <ClCompile Include="Strategy\Strategy.cpp">
+      <Filter>Source Files\Strategy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -190,6 +196,9 @@
     </ClInclude>
     <ClInclude Include="State\State.h">
       <Filter>Source Files\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Strategy\Strategy.h">
+      <Filter>Source Files\Strategy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

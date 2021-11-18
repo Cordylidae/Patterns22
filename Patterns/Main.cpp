@@ -21,6 +21,7 @@
 #include"Memento/Memento.h"
 #include"Observer/Observer.h"
 #include"State/State.h"
+#include"Strategy/Strategy.h"
 
 namespace SingletonNamespace {
 
@@ -689,6 +690,30 @@ namespace StateNamespace {
 		ClientCode();
 	}
 }
+namespace StrategyNamespace{
+	
+	void ClientCode()
+	{
+		Context* context = new Context(new ConcreteStrategyA);
+		
+		std::cout << "Client: Strategy is set to normal sorting. \n";
+		context->DoSomeBusinessLogic();
+
+		std::cout << "\n";
+		std::cout << "Client: Strategy is set to reverse sorting.\n";
+		context->setStrategy(new ConcreteStrategyB);
+		context->DoSomeBusinessLogic();
+
+		delete context;
+	}
+
+	void StrategyMain()
+	{
+		std::cout << "Strategy Main test: \n\n";
+
+		ClientCode();
+	}
+}
 
 int main()
 {
@@ -720,7 +745,7 @@ int main()
 	std::cout << "Memento : 16 \n";
 	std::cout << "Observer : 17 \n";
 	std::cout << "State : 18 \n";
-
+	std::cout << "Strategy : 19 \n";
 
 	std::cout << std::endl;
 	std::cin >> index;
@@ -764,6 +789,8 @@ int main()
 		case 17: ObserverNamespace::ObserverMain();
 			break;
 		case 18: StateNamespace::StateMain();
+			break;
+		case 19: StrategyNamespace::StrategyMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";
