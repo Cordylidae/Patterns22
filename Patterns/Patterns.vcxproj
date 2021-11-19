@@ -161,6 +161,7 @@
     <ClCompile Include="Singleton\Singleton.cpp" />
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="Strategy\Strategy.cpp" />
+    <ClCompile Include="TemplateMethod\TemplateMethod.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory\AbstractFactory.h" />
@@ -183,6 +184,7 @@
     <ClInclude Include="Singleton\Singleton.h" />
     <ClInclude Include="State\State.h" />
     <ClInclude Include="Strategy\Strategy.h" />
+    <ClInclude Include="TemplateMethod\TemplateMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

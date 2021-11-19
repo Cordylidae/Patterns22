@@ -22,6 +22,7 @@
 #include"Observer/Observer.h"
 #include"State/State.h"
 #include"Strategy/Strategy.h"
+#include"TemplateMethod/TemplateMethod.h"
 
 namespace SingletonNamespace {
 
@@ -714,6 +715,36 @@ namespace StrategyNamespace{
 		ClientCode();
 	}
 }
+namespace TemplateMethodNamespace {
+	
+	void ClientCode(AbstractClass* _class)
+	{
+		///...
+
+		_class->TemplateMethod();
+
+		///...
+	}
+
+	void TemplateMethodMain()
+	{
+		std::cout << "TemplateMethod Main test: \n\n";
+
+		std::cout << "Same client code work with differnt subclass:\n";
+		
+		ConcreteClass1* concreteClass1 = new ConcreteClass1;
+		ClientCode(concreteClass1);
+	
+		std::cout << "\nSame client code can work with different subclass:\n";
+
+		ConcreteClass2* concreteClass2 = new ConcreteClass2;
+		ClientCode(concreteClass2);
+
+		delete concreteClass1;
+		delete concreteClass2;
+	}
+
+}
 
 int main()
 {
@@ -746,6 +777,7 @@ int main()
 	std::cout << "Observer : 17 \n";
 	std::cout << "State : 18 \n";
 	std::cout << "Strategy : 19 \n";
+	std::cout << "TemplateMethod : 20\n";
 
 	std::cout << std::endl;
 	std::cin >> index;
@@ -791,6 +823,8 @@ int main()
 		case 18: StateNamespace::StateMain();
 			break;
 		case 19: StrategyNamespace::StrategyMain();
+			break;
+		case 20: TemplateMethodNamespace::TemplateMethodMain();
 			break;
 		default :
 			std::cout << "Try again encorrected index\n";

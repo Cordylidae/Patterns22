@@ -73,6 +73,9 @@
     <Filter Include="Source Files\Strategy">
       <UniqueIdentifier>{25c5f5c2-bed0-4a62-9c80-774a2006e842}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\TemplateMethod">
+      <UniqueIdentifier>{cf940bed-b839-4a52-bc76-0f4f6b433144}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -138,6 +141,9 @@
     <ClCompile Include="Strategy\Strategy.cpp">
       <Filter>Source Files\Strategy</Filter>
     </ClCompile>
+    <ClCompile Include="TemplateMethod\TemplateMethod.cpp">
+      <Filter>Source Files\TemplateMethod</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Singleton\Singleton.h">
@@ -199,6 +205,9 @@
     </ClInclude>
     <ClInclude Include="Strategy\Strategy.h">
       <Filter>Source Files\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateMethod\TemplateMethod.h">
+      <Filter>Source Files\TemplateMethod</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
