@@ -162,6 +162,7 @@
     <ClCompile Include="State\State.cpp" />
     <ClCompile Include="Strategy\Strategy.cpp" />
     <ClCompile Include="TemplateMethod\TemplateMethod.cpp" />
+    <ClCompile Include="Visitor\Visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory\AbstractFactory.h" />
@@ -185,6 +186,7 @@
     <ClInclude Include="State\State.h" />
     <ClInclude Include="Strategy\Strategy.h" />
     <ClInclude Include="TemplateMethod\TemplateMethod.h" />
+    <ClInclude Include="Visitor\Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
